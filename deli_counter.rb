@@ -19,7 +19,7 @@ def line(katz_deli)
   katz_deli.each_with_index do |name, idx|
     new_string += " #{idx + 1}. #{name}"
   end
-  new_string
+  puts new_string
 end
 
 def now_serving(katz_deli)
