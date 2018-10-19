@@ -23,7 +23,8 @@ def line(katz_deli)
 end
 
 def now_serving(katz_deli)
-  puts "There is nobody waiting to be served!" if katz_deli.length == 0
-  #curPerson = katz_deli.shift
+  if katz_deli.length == 0 
+    puts "There is nobody waiting to be served!"
+  end
   puts "Currently serving #{katz_deli.shift}."
 end
