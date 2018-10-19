@@ -3,6 +3,7 @@ katz_deli = []
 def line(katz_deli)
   katz_deli.each_with_index do |name, idx|
     puts "Welcome, #{name}. You are number #{idx + 1} in line. "
+  end
 end
 
 def take_a_number(katz_deli)
