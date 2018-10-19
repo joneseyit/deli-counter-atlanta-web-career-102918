@@ -15,13 +15,15 @@ end
 
 def line(katz_deli)
   if katz_deli.length == 0 
-    "The line is currently empty."
+    puts "The line is currently empty."
   else
     new_string = "The line is currently:"
     katz_deli.each_with_index do |name, idx|
       new_string += " #{idx + 1}. #{name}"
     end
-  puts new_string
+    puts new_string
+  end
+  
 end
 
 def now_serving(katz_deli)
