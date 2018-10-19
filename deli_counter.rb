@@ -14,7 +14,7 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
-  puts "The line is currently empty." if katz_deli.length == 0
+  return "The line is currently empty." if katz_deli.length == 0
   new_string = "The line is currently:"
   katz_deli.each_with_index do |name, idx|
     new_string += " #{idx + 1}. #{name}"
